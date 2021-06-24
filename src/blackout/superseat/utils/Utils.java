@@ -24,63 +24,63 @@ public class Utils {
 		double y = b.getY();
 		double z = b.getZ();
 		
-		for (float i = 0; i < 1; i += nb)
+		for (double i = 0; i < 1; i += nb)
 			p.spawnParticle(part, x + i, y, z, 0, 0, 0, 0, null);
-		for (float i = 0; i < 1; i += nb)
+		for (double i = 0; i < 1; i += nb)
 			p.spawnParticle(part, x, y + i, z, 0, 0, 0, 0, null);
-		for (float i = 0; i < 1; i += nb)
+		for (double i = 0; i < 1; i += nb)
 			p.spawnParticle(part, x, y, z + i, 0, 0, 0, 0, null);
 		
 		x = b.getX() + 1;
 		y = b.getY() + 1;
 		z = b.getZ() + 1;
 		
-		for (float i = 0; i < 1; i += nb)
+		for (double i = 0; i < 1; i += nb)
 			p.spawnParticle(part, x - i, y, z, 0, 0, 0, 0, null);
-		for (float i = 0; i < 1; i += nb)
+		for (double i = 0; i < 1; i += nb)
 			p.spawnParticle(part, x, y - i, z, 0, 0, 0, 0, null);
-		for (float i = 0; i < 1; i += nb)
+		for (double i = 0; i < 1; i += nb)
 			p.spawnParticle(part, x, y, z - i, 0, 0, 0, 0, null);
 		
 		x = b.getX() + 1;
 		y = b.getY() + 1;
 		z = b.getZ();
 		
-		for (float i = 0; i < 1; i += 0.2f)
+		for (double i = 0; i < 1; i += 0.2f)
 			p.spawnParticle(part, x - i, y, z, 0, 0, 0, 0, null);
-		for (float i = 0; i < 1; i += 0.2f)
+		for (double i = 0; i < 1; i += 0.2f)
 			p.spawnParticle(part, x, y - i, z, 0, 0, 0, 0, null);
 		
 		x = b.getX() + 1;
 		y = b.getY();
 		z = b.getZ() + 1;
 		
-		for (float i = 0; i < 1; i += nb)
+		for (double i = 0; i < 1; i += nb)
 			p.spawnParticle(part, x - i, y, z, 0, 0, 0, 0, null);
-		for (float i = 0; i < 1; i += nb)
+		for (double i = 0; i < 1; i += nb)
 			p.spawnParticle(part, x, y, z - 1, 0, 0, 0, 0, null);
 		
 		x = b.getX();
 		y = b.getY() + 1;
 		z = b.getZ() + 1;
 		
-		for (float i = 0; i < 1; i += nb)
+		for (double i = 0; i < 1; i += nb)
 			p.spawnParticle(part, x, y - i, z, 0, 0, 0, 0, null);
-		for (float i = 0; i < 1; i += nb)
+		for (double i = 0; i < 1; i += nb)
 			p.spawnParticle(part, x, y, z - 1, 0, 0, 0, 0, null);
 		
 		x = b.getX() + 1;
 		y = b.getY();
 		z = b.getZ();
 		
-		for (float i = 0; i < 1; i += nb)
+		for (double i = 0; i < 1; i += nb)
 			p.spawnParticle(part, x, y, z + i, 0, 0, 0, 0, null);
 		
 		x = b.getX();
 		y = b.getY() + 1;
 		z = b.getZ();
 		
-		for (float i = 0; i < 1; i += nb)
+		for (double i = 0; i < 1; i += nb)
 			p.spawnParticle(part, x, y, z + i, 0, 0, 0, 0, null);
 	}
 	
@@ -106,63 +106,63 @@ public class Utils {
 			double y = s.getLocation().getY();
 			double z = s.getLocation().getZ();
 			
-			for (float i = 0; i < 1; i += nb)
+			for (double i = 0; i < 1; i += nb)
 				p.spawnParticle(part, x + i, y, z, 0, 0, 0, 0, null);
-			for (float i = 0; i < 1; i += nb)
+			for (double i = 0; i < 1; i += nb)
 				p.spawnParticle(part, x, y + i, z, 0, 0, 0, 0, null);
-			for (float i = 0; i < 1; i += nb)
+			for (double i = 0; i < 1; i += nb)
 				p.spawnParticle(part, x, y, z + i, 0, 0, 0, 0, null);
 			
 			x = s.getLocation().getX() + 1;
 			y = s.getLocation().getY() + 1;
 			z = s.getLocation().getZ() + 1;
 			
-			for (float i = 0; i < 1; i += nb)
+			for (double i = 0; i < 1; i += nb)
 				p.spawnParticle(part, x - i, y, z, 0, 0, 0, 0, null);
-			for (float i = 0; i < 1; i += nb)
+			for (double i = 0; i < 1; i += nb)
 				p.spawnParticle(part, x, y - i, z, 0, 0, 0, 0, null);
-			for (float i = 0; i < 1; i += nb)
+			for (double i = 0; i < 1; i += nb)
 				p.spawnParticle(part, x, y, z - i, 0, 0, 0, 0, null);
 			
 			x = s.getLocation().getX() + 1;
 			y = s.getLocation().getY() + 1;
 			z = s.getLocation().getZ();
 			
-			for (float i = 0; i < 1; i += 0.2f)
+			for (double i = 0; i < 1; i += 0.2f)
 				p.spawnParticle(part, x - i, y, z, 0, 0, 0, 0, null);
-			for (float i = 0; i < 1; i += 0.2f)
+			for (double i = 0; i < 1; i += 0.2f)
 				p.spawnParticle(part, x, y - i, z, 0, 0, 0, 0, null);
 			
 			x = s.getLocation().getX() + 1;
 			y = s.getLocation().getY();
 			z = s.getLocation().getZ() + 1;
 			
-			for (float i = 0; i < 1; i += nb)
+			for (double i = 0; i < 1; i += nb)
 				p.spawnParticle(part, x - i, y, z, 0, 0, 0, 0, null);
-			for (float i = 0; i < 1; i += nb)
+			for (double i = 0; i < 1; i += nb)
 				p.spawnParticle(part, x, y, z - 1, 0, 0, 0, 0, null);
 			
 			x = s.getLocation().getX();
 			y = s.getLocation().getY() + 1;
 			z = s.getLocation().getZ() + 1;
 			
-			for (float i = 0; i < 1; i += nb)
+			for (double i = 0; i < 1; i += nb)
 				p.spawnParticle(part, x, y - i, z, 0, 0, 0, 0, null);
-			for (float i = 0; i < 1; i += nb)
+			for (double i = 0; i < 1; i += nb)
 				p.spawnParticle(part, x, y, z - 1, 0, 0, 0, 0, null);
 			
 			x = s.getLocation().getX() + 1;
 			y = s.getLocation().getY();
 			z = s.getLocation().getZ();
 			
-			for (float i = 0; i < 1; i += nb)
+			for (double i = 0; i < 1; i += nb)
 				p.spawnParticle(part, x, y, z + i, 0, 0, 0, 0, null);
 			
 			x = s.getLocation().getX();
 			y = s.getLocation().getY() + 1;
 			z = s.getLocation().getZ();
 			
-			for (float i = 0; i < 1; i += nb)
+			for (double i = 0; i < 1; i += nb)
 				p.spawnParticle(part, x, y, z + i, 0, 0, 0, 0, null);
 			spanwRotationLine(s, p);
 		}
@@ -184,37 +184,42 @@ public class Utils {
 		
 		switch ((int)(s.getRotation())) {
 			case 0:
-				for (float i = 0; i < 0.5f; i += nb)
+				for (double i = 0; i < 0.5f; i += nb)
 					p.spawnParticle(part, x + 0.5f, y + 1, z + i + 0.5f, 0, 0, 0, 0, null);
 			break;
 			case 45:
-				for (float i = 0; i < 0.5f; i += nb)
+				for (double i = 0; i < 0.5f; i += nb)
 					p.spawnParticle(part, x - i + 0.5f, y + 1, z + i + 0.5f, 0, 0, 0, 0, null);
 			break;
 			case 90:
-				for (float i = 0; i < 0.5f; i += nb)
+				for (double i = 0; i < 0.5f; i += nb)
 					p.spawnParticle(part, x - i + 0.5f, y + 1, z + 0.5f, 0, 0, 0, 0, null);
 			break;
 			case 135:
-				for (float i = 0; i < 0.5f; i += nb)
+				for (double i = 0; i < 0.5f; i += nb)
 					p.spawnParticle(part, x - i + 0.5f, y + 1, z - i + 0.5f, 0, 0, 0, 0, null);
 			break;
 			case 180:
-				for (float i = 0; i < 0.5f; i += nb)
+				for (double i = 0; i < 0.5f; i += nb)
 					p.spawnParticle(part, x + 0.5f, y + 1, z - i + 0.5f, 0, 0, 0, 0, null);
 			break;
 			case 225:
-				for (float i = 0; i < 0.5f; i += nb)
+				for (double i = 0; i < 0.5f; i += nb)
 					p.spawnParticle(part, x + i + 0.5f, y + 1, z - i + 0.5f, 0, 0, 0, 0, null);
 			break;
 			case 270:
-				for (float i = 0; i < 0.5f; i += nb)
+				for (double i = 0; i < 0.5f; i += nb)
 					p.spawnParticle(part, x + i + 0.5f, y + 1, z + 0.5f, 0, 0, 0, 0, null);
 			break;
 			case 315:
-				for (float i = 0; i < 0.5f; i += nb)
+				for (double i = 0; i < 0.5f; i += nb)
 					p.spawnParticle(part, x + i + 0.5f, y + 1, z + i + 0.5f, 0, 0, 0, 0, null);
 			break;
+			default:
+				for (double i = 0; i < 0.5f; i += nb)
+					p.spawnParticle(part, x + 0.5f, y + 1, z + i + 0.5f, 0, 0, 0, 0, null);
+			break;
+			
 		}
 	}
 	
@@ -258,11 +263,7 @@ public class Utils {
 	public static boolean isWand(PlayerInventory inv) {
 		ItemStack item = inv.getItemInMainHand();
 		
-		if (item.getType() == Material.BLAZE_ROD &&
-			item.getItemMeta().getDisplayName()
-			.equals("§6Seat wand")) {
-			return true;
-		}
-		return false;
+		return(item.getType() == Material.BLAZE_ROD && 
+			item.getItemMeta().getDisplayName().equals("§6Seat wand"));
 	}
 }

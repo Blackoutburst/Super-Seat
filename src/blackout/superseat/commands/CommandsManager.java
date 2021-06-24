@@ -18,6 +18,7 @@ public class CommandsManager {
 		switch(label) {
 			case "superseat:seatwand": case "seatwand": new CommandSeatWand().run(sender); break;
 			case "superseat:reload": case "reload": new CommandReload().run(sender); break;
+			default: break;
 		}
 	}
 }

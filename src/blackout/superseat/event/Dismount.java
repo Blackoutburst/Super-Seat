@@ -11,10 +11,9 @@ public class Dismount {
 	 * @param event
 	 */
 	public void execute(EntityDismountEvent event) {
-		if (event.getDismounted() instanceof ArmorStand) {
-			if (event.getEntity().getName().equals("§7seat")) {
-				event.getDismounted().remove();
-			}
+		if (event.getDismounted() instanceof ArmorStand && 
+			event.getEntity().getName().equals("§7seat")) {
+			event.getDismounted().remove();
 		}
 	}
 }

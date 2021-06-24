@@ -23,10 +23,10 @@ public class Move {
 	 */
 	public void execute(PlayerMoveEvent event) {
 		for (Entity e : event.getPlayer().getWorld().getEntities()) {
-			if (e instanceof ArmorStand) {
-				if (e.getName().equals("§7seat") && e.getPassengers().size() == 0) {
-					e.remove();
-				}
+			if (e instanceof ArmorStand && 
+				e.getName().equals("§7seat") && 
+				e.getPassengers().size() == 0) {
+				e.remove();
 			}
 		}
 		

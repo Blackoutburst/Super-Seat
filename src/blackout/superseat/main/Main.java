@@ -37,9 +37,6 @@ public class Main extends JavaPlugin implements Listener {
 		new Load().execute();
 	}
 	
-	@Override
-	public void onDisable() {}
-	
 	@EventHandler
 	public void onBlockDamageEvent(BlockBreakEvent event) {
 		new BlockBreak().execute(event);
