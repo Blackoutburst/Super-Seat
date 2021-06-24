@@ -1,0 +1,17 @@
+main: blackout.superseat.main.Main
+name: SuperSeat
+version: 1.0
+api-version: 1.13
+author: Blackoutburst
+description: Seat plugin
+commands:
+  seatwand:
+    description: Give you the seatwand tool
+    usage: /seatwand
+    permission: superseat.seatwand
+    permission-message: Sorry but you don't have access to this command !
+  reload:
+    description: Reload the configuration file
+    usage: /reload
+    permission: superseat.reload
+    permission-message: Sorry but you don't have access to this command !
