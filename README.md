@@ -22,7 +22,7 @@ Possible issue if player doesn't have the permission to interact with block (spa
 Use `/seatwand` to get the seat wand tool.\
 
 With the wand :\
-`RIGHT CLICK` a block to create a seat (works on ANYTHING)\
+`RIGHT CLICK` a block to create a seat (works on **ANYTHING**)\
 `RIGHT CLICK` a seat to remove a seat\
 `LEFT CLICK` to change a seat orientation
 
