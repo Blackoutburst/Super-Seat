@@ -4,22 +4,22 @@
 # Super-Seat
 Super Seat is a spigot plugin to create seat using a special tool.
 
-### Versions
+## Versions
 Created and tested with Paper Spigot 1.16.5
 
-### Commands
+## Commands
 `/seatwand` give you the seat wand ussed to create, remove and edit seats.\
 `/reload` reload the configuration file.
 
-### Configuration
+## Configuration
 `particle-render-distance` Tell how far the plugin should render seat particles when you hold the seat wand.\
 `seat-height` Set the player height when he sit on a seat.
 
-### Permission
+## Permission
 `superseat.seatwand` give player access to the command `/seatwand`.\
 `superseat.reload` give player access to the command `/reload`.
 
-### Issue
+## Issue
 Possible issue if player doesn't have the permission to interact with block (spawn protection / world guard) they will not be able to sit
 
 ## Usage
