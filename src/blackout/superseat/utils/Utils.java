@@ -93,77 +93,12 @@ public class Utils {
 	 */
 	public static void spanwParticleCube(Player p) {
 		for (Seat s : Main.seats) {
-			
 			if (Math.sqrt(Math.pow(s.getLocation().getX() - p.getLocation().getX(), 2) + 
 				Math.pow(s.getLocation().getY() - p.getLocation().getY(), 2) + 
 				Math.pow(s.getLocation().getZ() - p.getLocation().getZ(), 2)) > Config.particleRenderDistance)
 				continue;
 			
-			
-			final Particle part = Particle.CRIT;
-			final float nb = 0.2f;
-			double x = s.getLocation().getX();
-			double y = s.getLocation().getY();
-			double z = s.getLocation().getZ();
-			
-			for (double i = 0; i < 1; i += nb)
-				p.spawnParticle(part, x + i, y, z, 0, 0, 0, 0, null);
-			for (double i = 0; i < 1; i += nb)
-				p.spawnParticle(part, x, y + i, z, 0, 0, 0, 0, null);
-			for (double i = 0; i < 1; i += nb)
-				p.spawnParticle(part, x, y, z + i, 0, 0, 0, 0, null);
-			
-			x = s.getLocation().getX() + 1;
-			y = s.getLocation().getY() + 1;
-			z = s.getLocation().getZ() + 1;
-			
-			for (double i = 0; i < 1; i += nb)
-				p.spawnParticle(part, x - i, y, z, 0, 0, 0, 0, null);
-			for (double i = 0; i < 1; i += nb)
-				p.spawnParticle(part, x, y - i, z, 0, 0, 0, 0, null);
-			for (double i = 0; i < 1; i += nb)
-				p.spawnParticle(part, x, y, z - i, 0, 0, 0, 0, null);
-			
-			x = s.getLocation().getX() + 1;
-			y = s.getLocation().getY() + 1;
-			z = s.getLocation().getZ();
-			
-			for (double i = 0; i < 1; i += 0.2f)
-				p.spawnParticle(part, x - i, y, z, 0, 0, 0, 0, null);
-			for (double i = 0; i < 1; i += 0.2f)
-				p.spawnParticle(part, x, y - i, z, 0, 0, 0, 0, null);
-			
-			x = s.getLocation().getX() + 1;
-			y = s.getLocation().getY();
-			z = s.getLocation().getZ() + 1;
-			
-			for (double i = 0; i < 1; i += nb)
-				p.spawnParticle(part, x - i, y, z, 0, 0, 0, 0, null);
-			for (double i = 0; i < 1; i += nb)
-				p.spawnParticle(part, x, y, z - 1, 0, 0, 0, 0, null);
-			
-			x = s.getLocation().getX();
-			y = s.getLocation().getY() + 1;
-			z = s.getLocation().getZ() + 1;
-			
-			for (double i = 0; i < 1; i += nb)
-				p.spawnParticle(part, x, y - i, z, 0, 0, 0, 0, null);
-			for (double i = 0; i < 1; i += nb)
-				p.spawnParticle(part, x, y, z - 1, 0, 0, 0, 0, null);
-			
-			x = s.getLocation().getX() + 1;
-			y = s.getLocation().getY();
-			z = s.getLocation().getZ();
-			
-			for (double i = 0; i < 1; i += nb)
-				p.spawnParticle(part, x, y, z + i, 0, 0, 0, 0, null);
-			
-			x = s.getLocation().getX();
-			y = s.getLocation().getY() + 1;
-			z = s.getLocation().getZ();
-			
-			for (double i = 0; i < 1; i += nb)
-				p.spawnParticle(part, x, y, z + i, 0, 0, 0, 0, null);
+			spanwParticleCubeCustom(p.getWorld().getBlockAt(s.getLocation()), p, Particle.CRIT);
 			spanwRotationLine(s, p);
 		}
 	}
