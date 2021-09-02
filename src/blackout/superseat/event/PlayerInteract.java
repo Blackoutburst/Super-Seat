@@ -2,7 +2,6 @@ package blackout.superseat.event;
 
 import java.util.UUID;
 
-import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.Particle;
 import org.bukkit.block.Block;
@@ -96,20 +95,13 @@ public class PlayerInteract {
 			seatLoc.setY(seatLoc.getY() - Config.seatHeight);
 			seatLoc.setZ(seatLoc.getZ() + 0.5f);
 			
-			ArmorStand a = event.getPlayer().getWorld().spawn(seatLoc, ArmorStand.class);   
-			a.teleport(b.getLocation());
+			ArmorStand a = event.getPlayer().getWorld()
+			.spawn(new Location(event.getPlayer().getWorld(), seatLoc.getX(), seatLoc.getY(), seatLoc.getZ(), s.getRotation(), 0), ArmorStand.class);   
 			a.setCustomName("§7seat");
 			a.setCustomNameVisible(false);
 			a.setGravity(false);
 			a.setVisible(false);
-			
-			Bukkit.getServer().getScheduler().scheduleSyncDelayedTask(Main.getPlugin(Main.class), new Runnable(){
-				@Override
-				public void run(){
-					a.teleport(new Location(event.getPlayer().getWorld(), seatLoc.getX(), seatLoc.getY(), seatLoc.getZ(), s.getRotation(), 0));
-					a.addPassenger(event.getPlayer());
-				}
-			}, (3L));
+			a.addPassenger(event.getPlayer());
 		}
 	}
 }
